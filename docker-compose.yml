@@ -5,12 +5,12 @@ services:
     image: steezclick/node-web-app:2.0
     depends_on:
       - mongo
+    ports:
+      - 8080:8080
     environment:
       PORT: 8080
-      MONGO_URI: mongodb://localhost/test
+      MONGO_URI: mongodb://mongo/test
 
   mongo:
     image: mongo:4.2.3-bionic
     restart: always
-    ports:
-      - 27017:27017
