@@ -1,4 +1,4 @@
-FROM node:12.16.2-stretch
+FROM node:14.15-stretch
 
 WORKDIR /usr/app
 
